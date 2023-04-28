@@ -20,8 +20,13 @@ body {
   overflow: hidden;
   border-radius: 8px;
 }
-.product-container img {
+.desktop-img {
   max-width: 50%;
+  background-size: cover;
+}
+.mobile-img {
+  display: none;
+
   background-size: cover;
 }
 .text-product {
@@ -63,7 +68,7 @@ body {
 }
 .btn {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: center;
   align-items: center;
   font-weight: 700;
@@ -72,15 +77,22 @@ body {
   color: #ffffff;
   padding: 1rem 2rem;
   background-color: hsl(158, 36%, 37%);
+  transition: 0.4s;
 }
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 3rem;
+.btn:hover {
+  transform: scale(1.03);
+  background-color: hsl(159, 56%, 16%);
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media (max-width: 750px) {
+  .product-container {
+    flex-direction: column;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    visibility: visible;
+  }
 }
