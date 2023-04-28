@@ -32,12 +32,14 @@ body {
 .text-product > span {
   display: block;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 0.25rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 1.5rem;
 }
 .text-product h1 {
   font-family: Fraunces, sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin-bottom: 1.5rem;
   color: hsl(212, 21%, 14%);
 }
@@ -54,6 +56,7 @@ body {
   font-family: Fraunces;
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
+  font-weight: 700;
 }
 .price span {
   text-decoration: line-through;
@@ -71,8 +74,11 @@ body {
   background-color: hsl(158, 36%, 37%);
 }
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 3rem;
 }
 
 .attribution a {
